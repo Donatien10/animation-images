@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+}
+#animatin{
+ width: 640px;
+ overflow: auto;
+ border: 5px solid black;
+}
+.m{
+    display: flex;
+    animation-duration: 8s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+}
+@keyframes mesImages{
+    0%{
+        transform: translateX(5);
+    }
+    25%{
+        transform: translateX(-640px);
+    }
+    50%{
+        transform: translateX(-1280px);
+    }
+    75%{
+        transform: translateX(-1920);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
